@@ -1,0 +1,12 @@
+<div>
+  <h1>ToDo Detail Page</h1>
+
+  <span>Description: </span>
+  <input type="text" [(ngModel)]="todo.description"><br>
+  <br>
+  <span>Assigned To: </span>
+  <input type="text" [(ngModel)]="todo.assignedTo"><br>
+  <br><br>
+  <button (click)="update()">Update</button><br><br>
+  <h3 *ngIf="updated">Updated the ToDo</h3>
+</div>
